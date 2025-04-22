@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b564dfea-3c9f-4427-9afd-68d5345c3433",
-		"name": "API Project",
+		"_postman_id": "b27ddbcb-a619-4530-8b96-4f182b27b1da",
+		"name": "API Project Bayu Adli",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "43014459"
 	},
@@ -36,7 +36,7 @@
 					"script": {
 						"exec": [
 							"var name = pm.variables.replaceIn(\"{{$randomFirstName}}\");\r",
-							"var email = pm.variables.replaceIn(name + \"@gmail.com\");\r",
+							"var email = pm.variables.replaceIn(name + \"bayu@gmail.com\");\r",
 							"\r",
 							"pm.collectionVariables.set(\"name\", name);\r",
 							"pm.collectionVariables.set(\"email\", email);"
@@ -59,9 +59,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api-clients/",
+					"raw": "{{baseurl}}/api-clients/",
 					"host": [
-						"{{url}}"
+						"{{baseurl}}"
 					],
 					"path": [
 						"api-clients",
@@ -112,9 +112,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/status",
+					"raw": "{{baseurl}}/status",
 					"host": [
-						"{{url}}"
+						"{{baseurl}}"
 					],
 					"path": [
 						"status"
@@ -180,9 +180,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/books/1",
+					"raw": "{{baseurl}}/books/1",
 					"host": [
-						"{{url}}"
+						"{{baseurl}}"
 					],
 					"path": [
 						"books",
@@ -247,9 +247,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/orders",
+					"raw": "{{baseurl}}/orders",
 					"host": [
-						"{{url}}"
+						"{{baseurl}}"
 					],
 					"path": [
 						"orders"
@@ -325,9 +325,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/orders/{{orderId}}",
+					"raw": "{{baseurl}}/orders/{{orderId}}",
 					"host": [
-						"{{url}}"
+						"{{baseurl}}"
 					],
 					"path": [
 						"orders",
@@ -381,9 +381,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/orders/{{orderId}}",
+					"raw": "{{baseurl}}/orders/{{orderId}}",
 					"host": [
-						"{{url}}"
+						"{{baseurl}}"
 					],
 					"path": [
 						"orders",
